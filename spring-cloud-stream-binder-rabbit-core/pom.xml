@@ -6,11 +6,11 @@
 	<packaging>jar</packaging>
 	<name>spring-cloud-stream-binder-rabbit-core</name>
 	<description>RabbitMQ binder core</description>
-
+	<version>3.1.0.g4</version>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-stream-binder-rabbit-parent</artifactId>
-		<version>3.1.0</version>
+		<version>3.1.0.g4</version>
 	</parent>
 
 	<dependencies>

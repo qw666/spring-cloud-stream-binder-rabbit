@@ -506,6 +506,11 @@ public class RabbitMessageChannelBinder extends
 					q -> extension.getConsumerTagPrefix() + "#"
 							+ index.getAndIncrement());
 		}
+		if (extension.isRecreateQueue()) {
+			listenerContainer.setAmqpAdmin(this.provisioningProvider.getRabbitAdmin());
+			listenerContainer.setApplicationContext(this.provisioningProvider.getAutoDeclareContext());
+		}
+
 		listenerContainer.afterPropertiesSet();
 
 		AmqpInboundChannelAdapter adapter = new AmqpInboundChannelAdapter(

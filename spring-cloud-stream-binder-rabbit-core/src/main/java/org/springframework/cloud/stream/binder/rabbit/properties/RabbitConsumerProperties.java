@@ -140,6 +140,16 @@ public class RabbitConsumerProperties extends RabbitCommonProperties {
 	 */
 	private Long receiveTimeout;
 
+	public boolean isRecreateQueue() {
+		return recreateQueue;
+	}
+
+	public void setRecreateQueue(boolean recreateQueue) {
+		this.recreateQueue = recreateQueue;
+	}
+
+	private boolean recreateQueue;
+
 	public boolean isTransacted() {
 		return transacted;
 	}

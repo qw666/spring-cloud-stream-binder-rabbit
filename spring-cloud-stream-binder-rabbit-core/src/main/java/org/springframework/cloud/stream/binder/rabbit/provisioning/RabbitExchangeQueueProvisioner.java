@@ -85,9 +85,17 @@ public class RabbitExchangeQueueProvisioner
 
 	protected final Log logger = LogFactory.getLog(getClass());
 
+	public RabbitAdmin getRabbitAdmin() {
+		return rabbitAdmin;
+	}
+
 	private final RabbitAdmin rabbitAdmin;
 
 	private boolean notOurAdminException;
+
+	public GenericApplicationContext getAutoDeclareContext() {
+		return autoDeclareContext;
+	}
 
 	private final GenericApplicationContext autoDeclareContext = new GenericApplicationContext();
 

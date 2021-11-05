@@ -4,15 +4,11 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-stream-binder-rabbit-parent</artifactId>
-		<version>3.1.0</version>
+		<version>3.1.0.g4</version>
 	</parent>
 	<artifactId>spring-cloud-starter-stream-rabbit</artifactId>
 	<description>Spring Cloud Starter Stream Rabbit</description>
-	<url>https://projects.spring.io/spring-cloud</url>
-	<organization>
-		<name>Pivotal Software, Inc.</name>
-		<url>https://www.spring.io</url>
-	</organization>
+	<version>3.1.0.g4</version>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
 	</properties>
@@ -20,6 +16,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
+			<version>3.1.0.g4</version>
 		</dependency>
 	</dependencies>
 </project>
